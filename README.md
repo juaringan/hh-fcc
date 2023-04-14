@@ -11,3 +11,7 @@
 - 07:12:18 -> Transaction receipts. Nos quedamos en que no se puede comprobar el
   nº de bloques una vez desplegado, porque la versión de ethers parece que ya no lo 
   lleva. No olvides arranacar el ganache (en downloads).
+- 07:14:56 -> Sending a raw transaction in ethersjs.
+- 07:24:58 -> Interacting with contracts in ethersjs. Nos quedamos en el 07:28:00
+              interactuando con el contract, cambiando el currentFavouriteNumber
+
