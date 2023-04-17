@@ -11,17 +11,25 @@
 
 const ethers = require("ethers");
 const fs = require("fs-extra");
+require("dotenv").config();
 
 async function main() {
   //const provider = ethers.providers.JsonRpcProvider("http://127.0.0.1:7545");
   // nos quedamos en 7:07:38
 
-  const provider = new ethers.JsonRpcProvider("http://192.168.43.160:7545");
+  const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
 
-  const wallet = new ethers.Wallet(
-    "0x89cc2ca3e7a9e1f05753c1b07b3319c02d0eca4def7159b77ae44d5af7168699",
-    provider
+  //console.log(process.env);
+  //const wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+
+  // Para sacarla de una clave ya cifrada:
+  const encryptedJson = fs.readFileSync("./.encryptedKey.json", "utf8");
+  let wallet = ethers.Wallet.fromEncryptedJsonSync(
+    encryptedJson,
+    process.env.PRIVATE_KEY_PASSWORD
   );
+  wallet = await wallet.connect(provider);
+
   const abi = fs.readFileSync("./SimpleStorage_sol_SimpleStorage.abi", "utf-8");
   const binary = fs.readFileSync(
     "./SimpleStorage_sol_SimpleStorage.bin",
@@ -31,11 +39,16 @@ async function main() {
   console.log("Deploying, please wait...");
   const contract = await contractFactory.deploy();
   //esperamos un bloque del blockchain
-  const transactionReceipt = await contract.deploymentTransaction().wait(1);
+  let transactionReceipt = await contract.deploymentTransaction().wait(1);
   console.log(transactionReceipt);
 
   const currentFavouriteNumber = await contract.retrieve();
-  console.log(currentFavouriteNumber);
+  console.log(`CurrentFavouriteNumber: ${currentFavouriteNumber}`);
+
+  const transactionResponse = await contract.store("7");
+  transactionReceipt = await contract.deploymentTransaction().wait(1);
+  const updatedFavouriteNumber = await contract.retrieve();
+  console.log(`Updated favourite number: ${updatedFavouriteNumber}`);
 
   // console.log("Deploying only with transactionData");
   // const nonce = await wallet.getNonce();

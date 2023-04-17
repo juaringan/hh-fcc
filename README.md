@@ -14,4 +14,7 @@
 - 07:14:56 -> Sending a raw transaction in ethersjs.
 - 07:24:58 -> Interacting with contracts in ethersjs. Nos quedamos en el 07:28:00
               interactuando con el contract, cambiando el currentFavouriteNumber
-
+- 07:34:08 -> Environment variables.
+- 07:40:00 -> Better private key Management
+- 07:54:01 -> Optional Prettier Formatting. TODO: buscar el settings de VSCode
+              porque no hemos configurado correctamente los prettiers.
