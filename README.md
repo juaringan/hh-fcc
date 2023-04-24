@@ -19,4 +19,12 @@
 - 07:54:01 -> Optional Prettier Formatting. TODO: buscar el settings de VSCode
   porque no hemos configurado correctamente los prettiers.
 - 07:57:53 -> Deploying to a testnet or mainnet
-- 08:04:29 ->Verifying block explorers from the UI. Nos quedamos en que no verifica en etherscan
+- 08:04:29 -> Verifying block explorers from the UI. Nos quedamos en que no verifica en etherscan
+- 08:07:25 -> Alchemy Dashboard & the mempool
+- 08:20:18 -> Lesson 6 HardHat SimpleStorage
+- 08:22:47 -> HardHat Setup. Nos quedamos en el 08:24:05 en el tutorial oficial
+de hardhat, que no compile porque es incapaz de bajarse el solc (da error de proxy)
+FIXED!: Para utilizar el hardhat (npx hardhat comile) hay que hacer unset de 
+las variables del proxy (http_proxy, HTTP_PROXY, etc etc). Nos quedamos ahora
+en el testing porque ```     TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')``` (parece una incompatibilidad de versiones con ethrersjs
+
