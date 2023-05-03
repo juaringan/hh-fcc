@@ -27,4 +27,10 @@ de hardhat, que no compile porque es incapaz de bajarse el solc (da error de pro
 FIXED!: Para utilizar el hardhat (npx hardhat comile) hay que hacer unset de 
 las variables del proxy (http_proxy, HTTP_PROXY, etc etc). Nos quedamos ahora
 en el testing porque ```     TypeError: Cannot read properties of undefined (reading 'JsonRpcProvider')``` (parece una incompatibilidad de versiones con ethrersjs
-
+- 08:29:42 -> Hardhat setup troubleshouting
+- 08:31:50 -> Hardhat setup continue
+- 08:33:11 -> Deploying SimpleStorage from HardHat
+- 08:41:45 -> Networks in HardHat
+- 08:51:26 -> Programatic verification. Nos quedamos en el 08:54:47, creando una
+  cuenta en etherscan para poder cerificar programáticamente los contratos en 
+  sepolia
