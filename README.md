@@ -34,3 +34,7 @@ en el testing porque ```     TypeError: Cannot read properties of undefined (rea
 - 08:51:26 -> Programatic verification. Nos quedamos en el 08:54:47, creando una
   cuenta en etherscan para poder cerificar programáticamente los contratos en 
   sepolia
+- 09:06:36 -> Interacting with contracts in hardhat
+- 09:09:42 -> Artifacts troubleshouting
+- 09:10:52 -> Custom hardhat tasks
+- 09:18:12 -> hardhat localhost node.
