@@ -38,3 +38,10 @@ en el testing porque ```     TypeError: Cannot read properties of undefined (rea
 - 09:09:42 -> Artifacts troubleshouting
 - 09:10:52 -> Custom hardhat tasks
 - 09:18:12 -> hardhat localhost node.
+- 09:23:11 -> hardhat console
+- 09:26:13 -> Running tests
+- 09:38:10 -> Hardhat gas reporter
+- 09:44:40 -> Solidity coverage
+- 09:47:02 -> Harhat waffle
+- 09:47:39 -> Lesson 6 recap
+- 10:00:49 -> Lesson7: Hardhat Fund Me

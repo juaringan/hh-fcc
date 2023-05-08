@@ -5,8 +5,12 @@ coverage.json
 typechain
 typechain-types
 yarn*
+gas-report.txt
+coverage.json
+coverage
 
 # Hardhat files
 cache
 artifacts
+
 
