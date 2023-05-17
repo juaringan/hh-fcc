@@ -45,3 +45,12 @@ en el testing porque ```     TypeError: Cannot read properties of undefined (rea
 - 09:47:02 -> Harhat waffle
 - 09:47:39 -> Lesson 6 recap
 - 10:00:49 -> Lesson7: Hardhat Fund Me
+- 10:03:44 -> Hardhat setup
+              Para este punto ha cambiado bastante el hardhat, y las opciones 
+              que antes había de crear un 'advanced project' ya no existen.
+              No hay alternativa en el {chronological updates](https://github.com/smartcontractkit/full-blockchain-solidity-course-js/blob/main/chronological-updates.md), así que toca instalar las dependencias a manija. Eso incluye:
+
+``` bash
+yarn add --dev eslint dotenv solhint
+
+```
