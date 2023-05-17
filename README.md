@@ -51,6 +51,24 @@ en el testing porque ```     TypeError: Cannot read properties of undefined (rea
               No hay alternativa en el {chronological updates](https://github.com/smartcontractkit/full-blockchain-solidity-course-js/blob/main/chronological-updates.md), así que toca instalar las dependencias a manija. Eso incluye:
 
 ``` bash
-yarn add --dev eslint dotenv solhint
-
+yarn add --dev eslint dotenv solhint prettier @nomiclabs/hardhat-waffle \
+  @chainlink/contracts hardhat-deploy
+touch .npmignore
 ```
+
+Además, hay muchos ficheros que vienen pre-configurados, como los .prettierrc y el
+hardhat.config.js, que viene ya con redes de test (sepolia) predefinidas.
+
+
+- 10:06:20 -> Linting
+- 10:07:49 -> Hardhat setup continued
+- 10:09:38 -> Importing from NPM
+- 10:10:43 -> Hardhat Deploy:
+
+``` bash
+yarn add --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
+```
+- 10:14:00 -> comoenzamos con los scripts de deploy.
+@TODO: A ver cómo organizamos esto en el git, porque parece que va a ir como repo 
+separado. Hay que ver lo que condiciona esto
+
