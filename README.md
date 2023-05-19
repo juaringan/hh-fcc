@@ -72,3 +72,5 @@ yarn add --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
 @TODO: A ver cómo organizamos esto en el git, porque parece que va a ir como repo 
 separado. Hay que ver lo que condiciona esto
 
+- 10:21:05 -> Mocking & helper-hardhat-config
+- 10:40:00 -> Justo antes de crear el contrato Mock para despliegue en local
