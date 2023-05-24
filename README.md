@@ -74,3 +74,5 @@ separado. Hay que ver lo que condiciona esto
 
 - 10:21:05 -> Mocking & helper-hardhat-config
 - 10:40:00 -> Justo antes de crear el contrato Mock para despliegue en local
+- 10:52:51 -> Utils folder
+- 10:55:45 -> Tesnet Demo
