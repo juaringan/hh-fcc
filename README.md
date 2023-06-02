@@ -78,4 +78,5 @@ separado. Hay que ver lo que condiciona esto
 - 10:55:45 -> Tesnet Demo
 - 11:00:10 -> Solidity style guide
 - 11:08:35 -> Testing FundMe. No funciona el primer test. al parecer el fixture
-  no hace el deploy de los scripts, así que nos quedamos en 11:08:16
+  no hace el deploy de los scripts, así que nos quedamos en 11:08:16. Ok, todo 
+  correcto. Faltaba ajustar el priceFeed y había erroes en los tags del fixture
