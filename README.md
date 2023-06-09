@@ -80,3 +80,7 @@ separado. Hay que ver lo que condiciona esto
 - 11:08:35 -> Testing FundMe. No funciona el primer test. al parecer el fixture
   no hace el deploy de los scripts, así que nos quedamos en 11:08:16. Ok, todo 
   correcto. Faltaba ajustar el priceFeed y había erroes en los tags del fixture
+- 11:22:52 -> el test del fund() no funciona porque el mapping de addressToAmountFounded no es una función- Tiene  pinta de ser otra vez problemas de versiones.
+Acabamos bajando un FundMe directo de github porque había recubierto la variable con
+una función.
+- 11:24:01 -> Seguimos con la segunda parte de los tests del fund()
