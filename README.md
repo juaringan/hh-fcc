@@ -84,3 +84,9 @@ separado. Hay que ver lo que condiciona esto
 Acabamos bajando un FundMe directo de github porque había recubierto la variable con
 una función.
 - 11:24:01 -> Seguimos con la segunda parte de los tests del fund()
+- 11:30:38 -> Breakpoints & debugging
+- 11:33:40 -> Gas III
+- 11:36:36 -> Console.log && debugging
+- 11:37:31 -> Testing fundMe II 
+- 11:44:34 -> Storage in Solidity 
+- 11:52:38 -> Gas optimizations using storge knowledge
